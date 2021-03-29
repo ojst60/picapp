@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "picapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authpicapp32ab6981",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

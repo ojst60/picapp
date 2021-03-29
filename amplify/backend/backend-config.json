@@ -6,5 +6,30 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "api": {
+    "picapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": ""
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authpicapp32ab6981"
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 }
