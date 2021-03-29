@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "picapp32ab6981": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
